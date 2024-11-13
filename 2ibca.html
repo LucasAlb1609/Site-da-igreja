@@ -14,116 +14,57 @@
 
     <!-- Cabeçalho -->
     <header>
-        <div style="display: flex; align-items: bottom;">
-            <img src="fotos/logo-texto.jpg" style=" width: 70px; margin-right: 10px;">
-        </div>    
         <div class="logo">
-            <h5 style="font-size: 0.8em;">SEGUNDA IGREJA<br> 
-            BATISTA EM CASA AMARELA</h5>
+            <img src="fotos/logo-texto.jpg" style="width: 70px; margin-right: 10px;">
+            <h5 style="font-size: 0.8em;">SEGUNDA IGREJA<br>BATISTA EM CASA AMARELA</h5>
         </div>
-                    <nav>
-                        <ul class="menu" style="align-items: left; ">
-                            <!-- Item "Nossa Igreja" com dropdown -->
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" 
-                                href="#" id="nossaIgrejaDropdown" 
-                                role="button" 
-                                data-toggle="dropdown" 
-                                aria-haspopup="true" 
-                                aria-expanded="false">
-                                    Nossa Igreja
-                                </a>
-                                <div class="dropdown-menu dropdown-menu-shadow" aria-labelledby="nossaIgrejaDropdown">
-                                    <!-- Alterado o link para "historia.html" -->
-                                    <a class="dropdown-item font-weight-bold" href="historia.html">História</a>
-                                    <a class="dropdown-item font-weight-bold" href="#">Liderança</a>
-                                    <a class="dropdown-item font-weight-bold" href="#">Departamentos</a>
-                                    <a class="dropdown-item font-weight-bold" href="#">Biblioteca</a>
-                                    <a class="dropdown-item font-weight-bold" href="#">Congregações</a>
-                                </div>
-                            </li>
-
-                            <div class="col-auto ml-auto">
-                                <nav>
-                                    <ul class="list-unstyled d-flex mb-0">
-                                        <!-- Item "Agenda" com dropdown -->
-                                        <li class="nav-item dropdown">
-                                            <a class="nav-link dropdown-toggle" 
-                                            href="#" id="nossaIgrejaDropdown" 
-                                            role="button" 
-                                            data-toggle="dropdown" 
-                                            aria-haspopup="true" 
-                                            aria-expanded="false">
-                                                Agenda
-                                            </a>
-                                            <div class="dropdown-menu dropdown-menu-shadow" aria-labelledby="agendaDropdown">
-                                                <a class="dropdown-item font-weight-bold" href="#">Horários de Culto</a>
-                                                <a class="dropdown-item font-weight-bold" href="#">Reuniões de Ministério</a>
-                                                <a class="dropdown-item font-weight-bold" href="#">EBD</a>
-                                                <a class="dropdown-item font-weight-bold" href="#">Aulas de Música</a>
-                                            </div>
-                                        </li>
-
-                                        <div class="col-auto ml-auto">
-                                            <nav>
-                                                <ul class="list-unstyled d-flex mb-0">
-                                                    <!-- Item "Podcast" com dropdown -->
-                                                    <li class="nav-item dropdown">
-                                                        <a class="nav-link dropdown-toggle" 
-                                                        href="#" id="podcastDropdown" 
-                                                        role="button" 
-                                                        data-toggle="dropdown" 
-                                                        aria-haspopup="true" 
-                                                        aria-expanded="false">
-                                                            Podcast
-                                                        </a>
-                                                        <div class="dropdown-menu dropdown-menu-shadow" aria-labelledby="agendaDropdown">
-                                                            <a class="dropdown-item  font-weight-bold" href="https://youtube.com/playlist?list=PLkrOlM1LjMj9zNXqcBwkjMMZLU9fdSmOO&si=t3wOknwBhluoDOGo">
-                                                                <img src="fotos/ícones/icon-yt.png" alt="YouTube" 
-                                                                class="img-icon mr-2"
-                                                                width="20">
-                                                                YouTube</a>
-                                                                <a class="dropdown-item  font-weight-bold" href="https://open.spotify.com/show/5tvBiNseK0Q4GmfweuYtLP">
-                                                                <img src="fotos/ícones/icon-spotify.png" alt="Spotify" 
-                                                                class="img-icon mr-2"
-                                                                width="20">
-                                                                Spotify</a>
-                                                        </div>
-                                                    </li>
-
-                                                    <div class="col-auto ml-auto">
-                                                        <nav>
-                                                            <ul class="list-unstyled d-flex mb-0">
-                                                                <!-- Item "Contato" com dropdown -->
-                                                                <li class="nav-item dropdown">
-                                                                    <a class="nav-link dropdown-toggle" 
-                                                                    href="#" id="contatoDropdown" 
-                                                                    role="button" 
-                                                                    data-toggle="dropdown" 
-                                                                    aria-haspopup="true" 
-                                                                    aria-expanded="false">
-                                                                        Contato
-                                                                    </a>
-                                                                    <div class="dropdown-menu dropdown-menu-shadow" aria-labelledby="agendaDropdown">
-                                                                        <a class="dropdown-item  font-weight-bold" href="https://www.instagram.com/_2ibca/">
-                                                                            <img src="fotos/ícones/instagram.png" alt="Instagram" 
-                                                                            class="img-icon mr-2"
-                                                                            width="20">
-                                                                            Instagram</a>
-                                                                        <a class="dropdown-item  font-weight-bold" href="https://wa.me/message/YHZLZY6LT73HO1">
-                                                                            <img src="fotos/ícones/icon-wpp.png" alt="Whatsapp" 
-                                                                            class="img-icon mr-2"
-                                                                            width="20">
-                                                                            Whatsapp</a>
-                                                                    </div>
-                                                                </li>
-                             </ul>
-                         </nav>
+        <nav>
+            <ul class="menu">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="nossaIgrejaDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Nossa Igreja
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="nossaIgrejaDropdown">
+                        <a class="dropdown-item" href="historia.html">História</a>
+                        <a class="dropdown-item" href="#">Liderança</a>
+                        <a class="dropdown-item" href="#">Departamentos</a>
+                        <a class="dropdown-item" href="#">Biblioteca</a>
+                        <a class="dropdown-item" href="#">Congregações</a>
                     </div>
-                </div>
-            </div>
-        </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="agendaDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Agenda
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="agendaDropdown">
+                        <a class="dropdown-item" href="#">Horários de Culto</a>
+                        <a class="dropdown-item" href="#">Reuniões de Ministério</a>
+                        <a class="dropdown-item" href="#">EBD</a>
+                        <a class="dropdown-item" href="#">Aulas de Música</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="podcastDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Podcast
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="podcastDropdown">
+                        <a class="dropdown-item" href="https://youtube.com/playlist?list=PLkrOlM1LjMj9zNXqcBwkjMMZLU9fdSmOO&si=t3wOknwBhluoDOGo">YouTube</a>
+                        <a class="dropdown-item" href="https://open.spotify.com/show/5tvBiNseK0Q4GmfweuYtLP">Spotify</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="contatoDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Contato
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="contatoDropdown">
+                        <a class="dropdown-item" href="https://www.instagram.com/_2ibca/">Instagram</a>
+                        <a class="dropdown-item" href="https://wa.me/message/YHZLZY6LT73HO1">Whatsapp</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
     </header>
+    
 
     
     <div class="spotify-component">
