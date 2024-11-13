@@ -17,13 +17,13 @@ header {
     color: #FFFFFF; /* Cor do texto branco */
     padding: 20px; /* Espaçamento interno */
     display: flex;
-    text-align: left; /* Alinhei à esquerda */
+    align-items: center;
+    justify-content: space-between; /* Espaça o logotipo e o menu */
 }
 
 .logo {
-    font-size: 14px;
     display: flex;
-    align-items: center; /* Centraliza verticalmente a logo e o texto */
+    align-items: center;
 }
 
 .logo img {
@@ -33,20 +33,22 @@ header {
 
 
 
-/* Alinhamento dos itens do menu à esquerda */
+/* Alinhamento dos itens do menu à direita */
 nav {
     display: flex;
-    align-items: left; /* Alinhar os itens no topo */
+    align-items: center;
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    margin-left: auto; /* Move o menu para a direita */
+    gap: 20px; /* Espaço entre os itens do menu */
+    margin: 0;
+    padding: 0;
 }
 
 nav ul li {
-    margin-right: 20px;
+    margin: 0;
 }
 
 nav a {
@@ -55,11 +57,10 @@ nav a {
     font-weight: bold;
     font-size: 16px;
     padding: 8px 12px;
-    background-color: transparent; /* Removi a cor de fundo */
-    border-radius: 0; /* Removi a borda para tirar a moldura */
 }
 
 /* Estilos adicionais para o submenu */
+
 /* Estilo para o item "Sobre" e seu dropdown */
 .nav-item.dropdown:hover .dropdown-menu {
     display: block;
