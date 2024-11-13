@@ -14,7 +14,7 @@ body {
 /* Cabeçalho */
 header {
     background: #10acec; /* Cor de fundo azul */
-    color: #FFFFFF; /* Cor do texto branco */
+    color: #FFFFFF !important; /* Cor do texto branco */
     padding: 20px; /* Espaçamento interno */
     display: flex;
     align-items: center;
@@ -93,6 +93,13 @@ nav a:hover {
     background-color: #10acec;
 }
 
+.icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
 /* Estilos do Conteúdo da Página Aqui */
 
 .menu {
@@ -117,4 +124,65 @@ nav a:hover {
     text-align: right;
 }
 
-
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  footer {
+    background-color: #eee7d7;
+    padding: 40px 0;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-left {
+    flex: 1;
+    padding-right: 20px;
+  }
+  
+  .footer-left h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-left p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .social-links a {
+    margin-right: 15px;
+    text-decoration: none;
+  }
+  
+  .social-links img {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .footer-about, .footer-services, .footer-other {
+    flex: 1;
+  }
+  
+  .footer-about h4, .footer-services h4, .footer-other h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  ul li {
+    margin-bottom: 10px;
+  }
+  
