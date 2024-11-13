@@ -23,7 +23,12 @@ header {
 
 .logo {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
+    font-family: 'Arial Rounded MT Bold', Arial, sans-serif; /* Fonte mais arredondada */
+    font-weight: 700; /* Aumenta a espessura do texto */
+    font-size: 0.85em; /* Aumenta ligeiramente o tamanho da fonte */
+    margin: 0;
+    line-height: 1.2; /* Ajuste a altura da linha se necessário */
 }
 
 .logo img {
@@ -68,14 +73,16 @@ nav a {
 
 /* Personalização do estilo do dropdown */
 .dropdown-menu {
+    font-family: 'Arial Rounded MT Bold', Arial, sans-serif; /* Fonte mais arredondada */
     background-color: #ffffff; /* Cor de fundo do dropdown */
-    border: none; /* Remover borda */
-    font-weight: bold;
+    border: 1px solid hsl(210, 50%, 90%); /* Define uma borda com cor usando HSL */
+    border-radius: 8px; /* Define o arredondamento dos cantos */
+    font-weight: 500 !important;
     box-shadow: 3px 5px 8px rgba(0, 0, 0, 0.2);
 }
 
 .dropdown-item {
-    color: #0074D9; /* Cor do texto no dropdown */
+    color: #10acec; /* Cor do texto no dropdown */
 }
 
 .dropdown-item:hover {
