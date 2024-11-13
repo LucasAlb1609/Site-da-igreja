@@ -1,0 +1,112 @@
+/* Reset de Estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos Globais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Cabeçalho */
+header {
+    background: #10acec; /* Cor de fundo azul */
+    color: #FFFFFF; /* Cor do texto branco */
+    padding: 20px; /* Espaçamento interno */
+    display: flex;
+    text-align: left; /* Alinhei à esquerda */
+}
+
+.logo {
+    font-size: 14px;
+    display: flex;
+    align-items: center; /* Centraliza verticalmente a logo e o texto */
+}
+
+.logo img {
+    height: 100px; /* Altura da logo (ajuste conforme necessário) */
+    margin-right: 10px; /* Espaçamento entre a logo e o texto */
+}
+
+
+
+/* Alinhamento dos itens do menu à esquerda */
+nav {
+    display: flex;
+    align-items: left; /* Alinhar os itens no topo */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin-left: auto; /* Move o menu para a direita */
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 8px 12px;
+    background-color: transparent; /* Removi a cor de fundo */
+    border-radius: 0; /* Removi a borda para tirar a moldura */
+}
+
+/* Estilos adicionais para o submenu */
+/* Estilo para o item "Sobre" e seu dropdown */
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Personalização do estilo do dropdown */
+.dropdown-menu {
+    background-color: #ffffff; /* Cor de fundo do dropdown */
+    border: none; /* Remover borda */
+    font-weight: bold;
+    box-shadow: 3px 5px 8px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-item {
+    color: #0074D9; /* Cor do texto no dropdown */
+}
+
+.dropdown-item:hover {
+    background-color: #10acec; /* Cor de fundo ao passar o mouse no dropdown */
+}
+
+nav a:hover {
+    background-color: #10acec;
+}
+
+/* Estilos do Conteúdo da Página Aqui */
+
+.menu {
+    list-style: none;
+    display: flex;
+    
+}
+
+.menu-item {
+    margin-right: 20px;
+}
+
+/* Adicione um contêiner para o conteúdo abaixo da navegação */
+.content-container {
+    max-width: 500px; /* Largura máxima do conteúdo */
+    margin: 10px auto; /* Centraliza o contêiner */
+}
+
+/* Estilos adicionais para o conteúdo */
+
+.spotify-component{
+    text-align: right;
+}
+
+
