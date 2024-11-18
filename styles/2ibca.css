@@ -15,7 +15,7 @@ body {
 header {
     background: #10acec; /* Cor de fundo azul */
     color: #FFFFFF !important; /* Cor do texto branco */
-    padding: 20px; /* Espaçamento interno */
+    padding: 5px 15px; /* Espaçamento interno */
     display: flex;
     align-items: center;
     justify-content: space-between; /* Espaça o logotipo e o menu */
@@ -120,10 +120,6 @@ nav a:hover {
 
 /* Estilos adicionais para o conteúdo */
 
-.spotify-component{
-    text-align: right;
-}
-
 /* Estilos gerais */
 body {
     font-family: Arial, sans-serif;
@@ -133,6 +129,22 @@ body {
     background-color: #eee7d7;
     padding: 40px 0;
   }
+
+  /* Estilo do contêiner do carrossel */
+#carouselExampleIndicators {
+  max-width: 800px; /* Define a largura máxima */
+  height: 400px; /* Define a altura fixa */
+  margin: auto; /* Centraliza o carrossel horizontalmente */
+  overflow: hidden; /* Garante que conteúdo extra seja cortado */
+}
+
+/* Estilo das imagens dentro do carrossel */
+#carouselExampleIndicators .carousel-inner img {
+  width: 800px; /* As imagens ocupam toda a largura do carrossel */
+  height: 400px; /* Ajusta para a altura do contêiner */
+ 
+}
+
   
   .footer-container {
     display: flex;
@@ -176,6 +188,10 @@ body {
     font-size: 18px;
     margin-bottom: 15px;
   }
+
+  .spotify-component{
+    text-align: center;
+}
   
   ul {
     list-style-type: none;
