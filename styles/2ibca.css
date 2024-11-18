@@ -74,6 +74,11 @@ header {
 .logo img {
     height: 100px; /* Altura da logo (ajuste conforme necessário) */
     margin-right: 10px; /* Espaçamento entre a logo e o texto */
+    transition: transform 0.5s ease; /* Animação suave ao interagir */
+}
+
+.logo a:hover img {
+  transform: scale(1.1); /* Aumenta ligeiramente a logo ao passar o mouse */
 }
 
 .menu{
@@ -194,6 +199,30 @@ body {
   color: #000; /* Texto preto para melhor contraste */
   text-shadow: none; /* Remove sombras no texto, se houver */
 }
+
+.container1{
+background-color: #eee7d7;
+align-items: center;
+padding: 0.8em;
+}
+
+.container2{
+background-color: #10acec;
+align-items: center;
+padding: 0.8em;
+}
+
+.container3{
+background-color: #eee7d7;
+align-items: center;
+padding: 0.8em;
+}
+
+.container4{
+  background-color: #10acec;
+  align-items: center;
+  padding: 0.8em;
+  }
 
 footer {
   background-color: #eee7d7;
