@@ -8,8 +8,50 @@
 /* Estilos Globais */
 body {
     font-family: Arial, sans-serif;
+    font-size: 16px;
     background-color: #f4f4f4;
 }
+
+.container {
+  width: 90%; /* Em vez de fixar uma largura em pixels */
+  margin: 0 auto; /* Centraliza horizontalmente */
+}
+
+h1 {
+  font-size: 2rem; /* Escala com o tamanho base do texto */
+}
+
+/* Responsividade do carrossel */
+.carousel-inner img {
+  max-width: 100%;
+  height: auto; /* Ajusta automaticamente a altura mantendo a proporção */
+}
+
+/* Responsividade das legendas do carrossel */
+.carousel-caption {
+  background-color: rgba(255, 255, 255, 0.7); /* Fundo branco semitransparente */
+  padding: 10px 20px; /* Espaçamento interno */
+  border-radius: 5px; /* Bordas arredondadas */
+  color: #000; /* Cor do texto */
+  text-shadow: none; /* Remove sombra do texto */
+}
+
+/* Ajustes para telas menores */
+@media (max-width: 768px) {
+  .carousel-caption {
+      font-size: 0.9rem; /* Reduz o tamanho da fonte */
+      padding: 8px 15px; /* Ajusta o espaçamento */
+  }
+}
+
+/* Ajustes para smartphones */
+@media (max-width: 576px) {
+  .carousel-caption {
+      font-size: 0.8rem; /* Tamanho da fonte menor ainda */
+      padding: 5px 10px; /* Espaçamento mais compacto */
+  }
+}
+
 
 /* Cabeçalho */
 header {
@@ -36,6 +78,10 @@ header {
     margin-right: 10px; /* Espaçamento entre a logo e o texto */
 }
 
+.menu{
+  font-weight: 500 !important;
+  padding: 10px 40px;
+}
 
 
 /* Alinhamento dos itens do menu à direita */
@@ -83,6 +129,8 @@ nav a {
 
 .dropdown-item {
     color: #10acec; /* Cor do texto no dropdown */
+    font-weight: 700;
+    font-style: inherit;
 }
 
 .dropdown-item:hover {
@@ -125,11 +173,6 @@ body {
     font-family: Arial, sans-serif;
   }
   
-  footer {
-    background-color: #eee7d7;
-    padding: 40px 0;
-  }
-
   /* Estilo do contêiner do carrossel */
 #carouselExampleIndicators {
   max-width: 800px; /* Define a largura máxima */
@@ -145,60 +188,72 @@ body {
  
 }
 
-  
-  .footer-container {
-    display: flex;
-    justify-content: space-between;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  .footer-left {
-    flex: 1;
-    padding-right: 20px;
-  }
-  
-  .footer-left h3 {
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-  
-  .footer-left p {
-    font-size: 14px;
-    color: #555;
-    line-height: 1.6;
-    margin-bottom: 20px;
-  }
-  
-  .social-links a {
-    margin-right: 15px;
-    text-decoration: none;
-  }
-  
-  .social-links img {
-    width: 24px;
-    height: 24px;
-  }
-  
-  .footer-about, .footer-services, .footer-other {
-    flex: 1;
-  }
-  
-  .footer-about h4, .footer-services h4, .footer-other h4 {
-    font-size: 18px;
-    margin-bottom: 15px;
-  }
+.carousel-caption {
+  background-color: rgba(255, 255, 255, 0.7); /* Branco com 70% de transparência */
+  padding: 10px 10px; /* Espaçamento interno para o texto */
+  border-radius: 5px; /* Bordas arredondadas (opcional) */
+  color: #000; /* Texto preto para melhor contraste */
+  text-shadow: none; /* Remove sombras no texto, se houver */
+}
 
-  .spotify-component{
-    text-align: center;
+footer {
+  background-color: #eee7d7;
+  padding: 40px 0;
 }
   
-  ul {
-    list-style-type: none;
-    padding-left: 0;
-  }
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
   
-  ul li {
-    margin-bottom: 10px;
-  }
+.footer-left {
+  flex: 1;
+  padding-right: 20px;
+}
+  
+.footer-left h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+  
+.footer-left p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+ 
+.social-links a {
+  margin-right: 15px;
+  text-decoration: none;
+}
+  
+.social-links img {
+  width: 24px;
+  height: 24px;
+}
+  
+.footer-about, .footer-services, .footer-other {
+  flex: 1;
+}
+  
+.footer-about h4, .footer-services h4, .footer-other h4 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.spotify-component{
+  text-align: center;
+}
+  
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+  
+ul li {
+  margin-bottom: 10px;
+}
   
