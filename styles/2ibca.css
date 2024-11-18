@@ -67,8 +67,6 @@ header {
     display: flex;
     align-items: flex-end;
     font-family: 'Arial Rounded MT Bold', Arial, sans-serif; /* Fonte mais arredondada */
-    font-weight: 700; /* Aumenta a espessura do texto */
-    font-size: 0.85em; /* Aumenta ligeiramente o tamanho da fonte */
     margin: 0;
     line-height: 1.2; /* Ajuste a altura da linha se necessário */
 }
@@ -175,6 +173,7 @@ body {
   
   /* Estilo do contêiner do carrossel */
 #carouselExampleIndicators {
+  padding-top: 1.0em;
   max-width: 800px; /* Define a largura máxima */
   height: 400px; /* Define a altura fixa */
   margin: auto; /* Centraliza o carrossel horizontalmente */
@@ -198,7 +197,7 @@ body {
 
 footer {
   background-color: #eee7d7;
-  padding: 40px 0;
+  padding: 40px 30px 30px 30px;
 }
   
 .footer-container {
