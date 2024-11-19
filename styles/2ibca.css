@@ -21,20 +21,6 @@ h1 {
   font-size: 2rem; /* Escala com o tamanho base do texto */
 }
 
-/* Responsividade do carrossel */
-.carousel-inner img {
-  max-width: 100%;
-  height: auto; /* Ajusta automaticamente a altura mantendo a proporção */
-}
-
-/* Responsividade das legendas do carrossel */
-.carousel-caption {
-  background-color: rgba(255, 255, 255, 0.7); /* Fundo branco semitransparente */
-  padding: 10px 20px; /* Espaçamento interno */
-  border-radius: 5px; /* Bordas arredondadas */
-  color: #000; /* Cor do texto */
-  text-shadow: none; /* Remove sombra do texto */
-}
 
 /* Ajustes para telas menores */
 @media (max-width: 768px) {
@@ -55,12 +41,18 @@ h1 {
 
 /* Cabeçalho */
 header {
-    background: #10acec; /* Cor de fundo azul */
-    color: #FFFFFF !important; /* Cor do texto branco */
-    padding: 5px 15px; /* Espaçamento interno */
-    display: flex;
-    align-items: center;
-    justify-content: space-between; /* Espaça o logotipo e o menu */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #10acec; /* Cor de fundo azul */
+  color: #FFFFFF !important; /* Cor do texto branco */
+  padding: 5px 15px; /* Espaçamento interno */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Espaça o logotipo e o menu */
 }
 
 .logo {
@@ -72,7 +64,8 @@ header {
 }
 
 .logo img {
-    height: 100px; /* Altura da logo (ajuste conforme necessário) */
+    height: 60px; /* Altura da logo (ajuste conforme necessário) */
+    width: auto; /* Largura da logo (ajuste conforme necessário) */
     margin-right: 10px; /* Espaçamento entre a logo e o texto */
     transition: transform 0.5s ease; /* Animação suave ao interagir */
 }
@@ -96,15 +89,26 @@ nav {
 nav ul {
     list-style: none;
     display: flex;
+    justify-content: flex-end;
     gap: 20px; /* Espaço entre os itens do menu */
     margin: 0;
     padding: 0;
 }
 
 nav ul li {
-    margin: 0;
+    margin-left: 0;
 }
 
+nav ul li a{
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover{
+  color: #10acec;
+}
 nav a {
     text-decoration: none;
     color: #ffffff;
@@ -113,6 +117,14 @@ nav a {
     padding: 8px 12px;
 }
 
+main{
+  margin-top: 80px;
+  padding: 20px;
+}
+
+section{
+  margin-bottom: 50px;
+}
 /* Estilos adicionais para o submenu */
 
 /* Estilo para o item "Sobre" e seu dropdown */
@@ -178,10 +190,10 @@ body {
   
   /* Estilo do contêiner do carrossel */
 #carouselExampleIndicators {
-  padding-top: 1.0em;
+  padding: 1.0em;
   max-width: 800px; /* Define a largura máxima */
   height: 400px; /* Define a altura fixa */
-  margin: auto; /* Centraliza o carrossel horizontalmente */
+  margin: 100px 250px; /* Centraliza o carrossel horizontalmente */
   overflow: hidden; /* Garante que conteúdo extra seja cortado */
 }
 
@@ -198,6 +210,21 @@ body {
   border-radius: 5px; /* Bordas arredondadas (opcional) */
   color: #000; /* Texto preto para melhor contraste */
   text-shadow: none; /* Remove sombras no texto, se houver */
+}
+
+/* Responsividade do carrossel */
+.carousel-inner img {
+  max-width: 100%;
+  height: auto; /* Ajusta automaticamente a altura mantendo a proporção */
+}
+
+/* Responsividade das legendas do carrossel */
+.carousel-caption {
+  background-color: rgba(255, 255, 255, 0.7); /* Fundo branco semitransparente */
+  padding: 10px 20px; /* Espaçamento interno */
+  border-radius: 5px; /* Bordas arredondadas */
+  color: #000; /* Cor do texto */
+  text-shadow: none; /* Remove sombra do texto */
 }
 
 .container1{
