@@ -12,11 +12,6 @@ body {
     background-color: #f4f4f4;
 }
 
-.container {
-  width: 90%; /* Em vez de fixar uma largura em pixels */
-  margin: 0 auto; /* Centraliza horizontalmente */
-}
-
 h1 {
   font-size: 2rem; /* Escala com o tamanho base do texto */
 }
@@ -45,16 +40,28 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  background: #10acec; /* Cor de fundo azul */
+  background: #10acec !important;  /* Cor de fundo azul */
   color: #FFFFFF !important; /* Cor do texto branco */
   padding: 5px 15px; /* Espaçamento interno */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   z-index: 1000;
   display: flex;
   align-items: center;
-  justify-content: space-between; /* Espaça o logotipo e o menu */
+
 }
 
+.container {
+  width: 90%; /* Em vez de fixar uma largura em pixels */
+  margin: 0 auto; /* Centraliza horizontalmente */
+}
+
+.text-logo{
+
+}
+
+.menu-drop{
+  
+}
 .logo {
     display: flex;
     align-items: flex-end;
@@ -70,8 +77,12 @@ header {
     transition: transform 0.5s ease; /* Animação suave ao interagir */
 }
 
-.logo a:hover img {
+.logo:hover img {
   transform: scale(1.1); /* Aumenta ligeiramente a logo ao passar o mouse */
+}
+
+.logo-title{
+  margin-left: 10px !important;
 }
 
 .menu{
